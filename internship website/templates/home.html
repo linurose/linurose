@@ -1,0 +1,67 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Price Range Prediction</title>
+    <link rel="stylesheet" href="/static/CSS/style.css">
+</head>
+<body background="/static/images/mobile_1.jpg"  style="background-repeat: no-repeat;background-size:50% 50%;background-position: 5px 5px, left 3em bottom 2em">
+     
+<!-- Input Form -->
+<div  class="input form">
+  <form action="{{url_for('predict')}}"method="post" id="input head">
+ 
+    <h1 id="heading">Price Range Prediction</h1>
+    <h2 id="heading"> Smartphone </h2>
+             
+    <h3 id="input">Enter the Battery power </h3>
+    <input type="flaot" name="battery_power" placeholder="battery power in numerals">
+         
+     
+    
+    <h3 id="input">Front camera specification</h3>
+    <input type="float" name="fc" placeholder="Enter front cam pixel">
+    
+   
+        
+    <h3 id="input">Internal memory needed </h3>
+    <input type="flaot" name="int_mem" placeholder="Enter numerals">
+    
+    
+   
+    <h3 id="input">weight of the phone</h3>
+    <input type="flaot" name="mobile_wt" placeholder="required weight of mobile phone(numerals only)">
+    
+     <h3 id="input">Pixel height needed</h3>
+    <input type="flaot" name="px_height" placeholder="required pixel height of mobile phone(numerals only)">
+    
+    <h3 id="input">Pixel width needed</h3>
+    <input type="flaot" name="px_width" placeholder="required Pixel width of mobile phone(numerals only)">
+    
+    
+    <h3 id="input">Enter RAM requirement </h3>
+    <input type="flaot" name="ram" placeholder="RAM capacity">
+    
+    
+    <h3 id="input">screen height needed</h3>
+    <input type="flaot" name="sc_h" placeholder="required screen height of mobile phone(numerals only)">
+    
+    <h3 id="input">screen width needed</h3>
+    <input type="flaot" name="sc_w" placeholder="required screen width of mobile phone(numerals only)">
+    
+    
+     <h3 id="input">Enter talk time requirement </h3>
+    <input type="flaot" name="talk_time" placeholder="Talk_time needed">
+    
+     
+    
+    <br>
+    <br>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+ 
+</div>
+   
+</body>
+</html>
